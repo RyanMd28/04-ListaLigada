@@ -175,7 +175,7 @@ void buscarElemento()
 		cout << "O elemento nao existe. \n";
 	}
 	else {
-		cout << "Valor encontrado na lista." << endl;
+		cout << buscado << endl;
 	}
 }
 
