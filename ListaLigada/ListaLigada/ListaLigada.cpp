@@ -159,23 +159,24 @@ void inserirElemento()
 }
 
 void excluirElemento()
-{
+{	
 	int eValor;
-	NO* aux = primeiro; 
-
-
-	cout << "Digite o elemento a ser excluido.";
+	NO* aux = primeiro;
+	
+	cout << "Digite o elemento a ser excluido: \n";
 	cin >> eValor;
 
-	NO* excluir = posicaoElemento(eValor);
-	if (excluir == NULL) {
-		cout << "Elemento nao encontrado na lista.";
-	}
-	else {
-		while (excluir != NULL) {
-			NO* paraExcluir = excluir;
-			excluir = excluir ->prox;
-			free(paraExcluir);
+	NO* pos = posicaoElemento(eValor);
+
+	while (aux != pos) {
+		NO* deletar = aux;
+		deletar = aux->prox;
+		if (deletar == pos) {
+			deletar = pos->prox;
+			free(deletar);
+		}
+		else {
+			cout << "O valor não foi encontrado na lista. \n";
 		}
 	}
 
