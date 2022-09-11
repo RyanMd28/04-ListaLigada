@@ -1,3 +1,6 @@
+Ryan Miranda Domingos
+ryanmirandad@gmail.com
+
 # Lista Ligada
 ---
 
