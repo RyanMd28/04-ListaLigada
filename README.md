@@ -1,5 +1,5 @@
 Ryan Miranda Domingos
-ryanmirandad@gmail.com
+ryan.domingos@fatec.sp.gob.br
 
 # Lista Ligada
 ---
